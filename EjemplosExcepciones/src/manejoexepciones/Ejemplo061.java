@@ -37,10 +37,10 @@ public class Ejemplo061 {
 //            System.out.printf("De tipo %s\n", arithmeticException);
         
 //        }
-//        catch(IllegalFormatConversionException i){
-//            System.out.println("Lo sentimos hay un error");
-//            System.out.printf("De tipo %s\n", i);
-//        }
+        catch(IllegalFormatConversionException i){
+            System.out.println("Lo sentimos hay un error");
+            System.out.printf("De tipo %s\n", i);
+        }
                
     }
 }
