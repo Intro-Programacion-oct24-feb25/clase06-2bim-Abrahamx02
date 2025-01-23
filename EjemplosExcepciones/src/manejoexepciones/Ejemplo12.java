@@ -34,13 +34,11 @@ public class Ejemplo12 {
                     System.out.println("Ingrese el valor 2 a dividir");
                     valor2 = entrada.nextInt();
 
-                    resultado = (double)valor1 / valor2;
+                    resultado = valor1 / valor2;
                     resultados[i] = resultado;
                 }
 
-                for (int i = 0; i < resultados.length; i++) {
-                    System.out.printf("%.2f ", resultados[i]);
-                }
+                
                 bandera = false;
 
             } catch (ArithmeticException e) {
@@ -61,5 +59,9 @@ public class Ejemplo12 {
         almacenandose en cada posición del arreglo. Considerar las excepciones
         posibles*/
         }
+        System.out.printf("\nResultados:\n");
+        for (int i = 0; i < resultados.length; i++) {
+                    System.out.printf("%.2f\n", resultados[i]);
+                }
     }
 }
